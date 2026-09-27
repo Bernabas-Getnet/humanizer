@@ -110,6 +110,7 @@ const App = () => {
           <h1 className="text-6xl font-bold flex justify-center bg-linear-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
             <HiSparkles className="w-8 h-8 text-purple-500" /> AI Text Humanizer
           </h1>
+          <p className="text-neutral-500 text-sm mt-2">By Bernabas Getnet</p>
         </div>
         <div className="card bg-base-100 shadow-2xl max-w-5xl mx-auto">
           <div className="pt-4 px-8 flex justify-between items-center">
