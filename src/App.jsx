@@ -24,7 +24,7 @@ const App = () => {
     try{
       const ai = new GoogleGenAI({apiKey: import.meta.env.VITE_GEMINI_API_KEY});
       const response = await ai.models.generateContent({
-        model: "gemini-3.6-flash",
+        model: "gemini-2.5-flash",
         contents: "Rewrite the text below so it reads naturally, authentically, and like it was written by a real person. Requirements: 1. Preserve the original meaning, ideas, facts, and overall message. 2. Do not add, remove, or invent information. 3. Use natural human phrasing, sentence flow, and vocabulary. 4. Avoid overly polished, repetitive, robotic, or formulaic language commonly associated with AI generated writing. 5. Keep the original tone and intent unless the wording clearly needs improvement. 6.Fix all grammar, spelling, punctuation, and awkward phrasing errors. 7. Avoid unnecessary em dashes, en dashes, and hyphens. Prefer commas, periods, or natural sentence structures instead. 8. Do not make the writing unnecessarily complex or verbose. 9. Keep it clear, natural, and easy to read. 10. Do not mention that the text was rewritten or that AI was involved. Return only the rewritten text. TEXT: \n\n" + text
     });
     const humanizedText = response.text;
