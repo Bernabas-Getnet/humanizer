@@ -1,6 +1,7 @@
 import { HiCheck, HiClipboard, HiExclamationCircle, HiSparkles } from 'react-icons/hi'
 import { GoogleGenAI } from "@google/genai";
 import { MdContentPaste } from 'react-icons/md';
+import { useState } from 'react';
 
 
 const App = () => {
